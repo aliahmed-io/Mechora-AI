@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.venv/
+.venv-win/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+.env*
+!.env.example
+backend/data/
+artifacts/*.joblib
+artifacts/models/
+artifacts/experiments/
+output/
+.browsers/

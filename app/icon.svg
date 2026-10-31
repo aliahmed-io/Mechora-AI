@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Mechora AI</title>
+  <rect width="64" height="64" rx="14" fill="#590907"/>
+  <path d="M10 46v-2h4V20h-4v-2h11l9 20 9-20h10v2h-4v24h4v2H34v-2h4V23L28 46h-2L16 23v21h5v2Z" fill="#f5f0e8"/>
+  <circle cx="54" cy="43" r="3" fill="#b99a72"/>
+</svg>

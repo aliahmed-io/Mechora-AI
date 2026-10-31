@@ -1,0 +1,17 @@
+/* Let the editorial copy set the hero height so its actions never get clipped. */
+@media(min-width:481px){.hero{height:auto;min-height:635px;padding-bottom:42px}}
+@media(min-width:1650px){.hero{min-height:740px}}
+.hero>.hero-copy>.hero-actions{flex-wrap:wrap;row-gap:18px}.hero-copy .hero-footnote{line-height:1.7}
+.hotspot-marker{position:absolute;transform:translate(-50%,-50%);z-index:2;width:44px;height:44px}
+.hotspot-marker:has(.active),.hotspot-marker:focus-within{z-index:3}
+.hotspot-marker .hotspot{position:relative;inset:auto;width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid #ead6ba;background:#211b16db;color:#f5f0e8;box-shadow:0 0 0 7px #f5f0e81c;transition:background .18s,box-shadow .18s,transform .18s}
+.hotspot-marker .hotspot:hover{background:#590907;box-shadow:0 0 0 9px #e8d2b535;transform:scale(1.06)}
+.hotspot-marker .hotspot.active{background:#751726;border-color:#f5f0e8;box-shadow:0 0 0 7px #e8d2b54d}
+.hotspot-marker .hotspot:focus-visible{outline:2px solid #fff;outline-offset:10px}
+.hotspot-callout{position:absolute;left:calc(100% + 17px);top:50%;transform:translateY(-50%);width:150px;padding:12px 14px;background:#f5f0e8f5;border:1px solid #c8b59c;box-shadow:0 5px 22px #17151424;border-radius:3px;pointer-events:none}
+.hotspot-callout:before{content:'';position:absolute;right:100%;top:50%;width:18px;height:1px;background:#e8d2b5}
+.hotspot-callout>span{display:block;color:#786957;font:9px var(--sans);margin-bottom:7px}.hotspot-callout>strong{display:block;color:#590907;font:19px var(--serif);font-weight:400}
+.marker-right .hotspot-callout{left:auto;right:calc(100% + 17px)}.marker-right .hotspot-callout:before{right:auto;left:100%}
+.hotspot-detail{min-height:175px}
+@media(max-width:480px){.hero{display:flex;flex-direction:column;height:auto;min-height:780px;padding-bottom:0}.hero-copy{order:1;padding-bottom:32px}.hero-copy h1{font-size:clamp(70px,22.5vw,88px)}.hero-image{position:relative;order:2;top:auto;bottom:auto;left:auto;right:auto;margin-left:auto;width:75%;height:290px;flex-shrink:0}.hero-diagonal{top:auto;bottom:0;height:290px}.hero-readings{top:auto;bottom:32px}.hotspot-callout{width:130px;padding:10px}.hotspot-callout>span{font-size:8px}.hotspot-callout>strong{font-size:17px}.hotspot-marker{width:40px;height:40px}.hotspot-marker .hotspot{width:40px;height:40px}.hotspot-detail{min-height:175px}}
+@media(prefers-reduced-motion:reduce){.hotspot-marker .hotspot{transition:none}}

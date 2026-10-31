@@ -1,0 +1,7 @@
+import { api, type Observation, type Model } from './api';
+export type Reading=Observation&{id:string;machine_id:string;observed_at:string;source:'csv'|'connector'|'replay';model_version:string;analysis_id:string|null};
+export type Machine={id:string;name:string;location:string;created_at:string;reading_count:number;open_investigations:number;latest:Reading|null};
+export type Replay={id:string;dataset_id:string;dataset_name:string;machine_id:string;cursor:number;total:number;status:'paused'|'running'|'completed'|'error';speed:number;started_at:string;model_version:string;clock_note:string;error:string};
+export type Investigation={id:string;reading_id:string|null;analysis_id:string|null;record_id:string|null;machine_id:string|null;title:string;status:'open'|'in_progress'|'resolved';outcome:string;created_at:string;updated_at:string;resolved_at:string|null;snapshot:Observation&{machine_id?:string;observed_at?:string;source?:string};notes:{at:string;text:string;status:string;outcome:string}[]};
+export type TrainingRun={id:string;name:string;strategy:string;status:'queued'|'running'|'completed'|'failed';created_at:string;summary:{row_count:number;failure_count:number;splits:number[];progress:string};metrics:Model|null;error:string};
+export function patch<T>(path:string,body:unknown){return api<T>(path,{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});}

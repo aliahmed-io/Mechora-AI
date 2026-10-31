@@ -1,0 +1,7 @@
+{
+  "air_temperature": "ns=2;s=AirTemperature",
+  "process_temperature": "ns=2;s=ProcessTemperature",
+  "rotational_speed": "ns=2;s=RotationalSpeed",
+  "torque": "ns=2;s=Torque",
+  "tool_wear": "ns=2;s=ToolWear"
+}
